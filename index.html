@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <nav>
+        <h1>Selcouth</h1>
+        <ul class="navbtn">    
+               
+                <li><input type="text" name="" id="" ><a href=""><i class="fa-solid fa-magnifying-glass" style= "color:#698474; font-size: 1.5rem; margin-left: 0.5rem;"></i></a></li>
+                <li><a href="C:\Users\kent\Desktop\aleng bebang\new update 2.0\index.html"><strong>Home</strong></a></li>
+                <li><a href=""><strong>Products</strong></a></li>
+                <li><button onclick="cariton()"><span class="material-symbols-outlined" style="font-size: 50px; color: #698474;">
+            shopping_cart
+            </span></button></li>
+        </ul>
+        
+    </nav>
+
+
+
+    <div class="hidden" id="cart">
+        <h1>Cart</h1>
+        <ul >
+            <li id="list"></li>
+        </ul>
+        <p >Total: <p id="total"> Pesos</p> </p>
+        <button id="clear">Clear</button>
+        <button onclick="checkOut()" placeholder="Amount"> Check out</button>
+    </div> 
+
+
+
+    <div class="checkout" id="checkout">
+        <h1>Check-out</h1>
+        <ul id="cashOut">
+
+        </ul>
+        <p>total amount: <span id="totalToPay">0 </span></p>
+       <input type="number" id="payment">
+        <button onclick="paybtn()" >Pay Now</button>
+        <p id="Message" style="color: red;"></p>
+    </div>
+
+
+
+    <div class="mainPage">
+        <br>
+        
+    </div>
+    
+    <div class="container">
+        
+        <div class="item">
+            <h1>T-Shirts</h1>
+           <img src="public/tshirt bg remove/T-shirts_10-removebg-preview.png" alt="">
+        </div>
+        <div class="item">
+            <h1>Shoes</h1>
+            <img src="public/shoes bg remove/shoes_7-removebg-preview.png">
+        </div>
+        <div class="item">
+            <h1>Bags</h1>
+            <img src="public/bag bg remove/bag_4-removebg-preview.png" alt="">
+        </div>
+        <div class="item">
+            <h1>Jacket</h1>
+            <img src="public/jacket bg remove/jacket_2-removebg-preview.png" alt="" srcset="">
+        </div>
+    </div>
+
+    <div class="space">
+    <H1>T-shirts</H1>
+</div>
+
+
+
+    <div class="content1">
+
+        <div class="box">
+            <h1>Quote T-shirt</h1>
+            <h2>₱250</h2>
+           <a class="pic" href="public/preview/tshirt/1.png"><img src="public/tshirt bg remove/1-removebg-preview.png" alt="tshirt"></a>
+            
+        
+            <div class="like">
+            
+            <i class="fa-solid fa-heart" id="heartIcon" onclick="like(this)"></i>
+            <i class="fa-solid fa-paper-plane"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-solid fa-cash-register"></i>
+            </div> 
+            
+        </div>
+        <div class="box">
+            <h1>Coffee Break T-shirt</h1>
+            <h2>₱250</h2>
+            <a class="pic" href="public/preview/tshirt/3.png"><img src="public/tshirt bg remove/3-removebg-preview.png" alt=""></a>
+            <div class="like">
+
+                <i class="fa-solid fa-heart" id="heartIcon1" onclick="like(this)"></i>
+                <i class="fa-solid fa-paper-plane"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-solid fa-cash-register"></i>
+                </div>  
+        </div>
+        <div class="box">
+            <h1>Quote T-shirt</h1>
+            <h2>₱250</h2>
+            <a class="pic" href="public/preview/tshirt/4.png"><img src="public/tshirt bg remove/4-removebg-preview.png" alt=""></a>
+           
+            <div class="like">
+                <i class="fa-solid fa-heart" id="heartIcon1" onclick="like(this)"></i>
+                <i class="fa-solid fa-paper-plane"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-solid fa-cash-register"></i>
+                </div>  
+
+        </div>
+        <div class="box">
+            <h1>Quote T-shirt</h1>
+            <h2>₱280</h2>
+            <a class="pic" href="public/preview/tshirt/5.png"><img src="public/tshirt bg remove/5-removebg-preview.png" alt=""></a>
+            
+            <div class="like">
+                <i class="fa-solid fa-heart" id="heartIcon1" onclick="like(this)"></i>
+               <i class="fa-solid fa-paper-plane"></i>
+               <i class="fa-solid fa-cart-shopping"></i>
+               <i class="fa-solid fa-cash-register"></i>
+                </div> 
+        </div>
+        <div class="box">
+            <h1>Cest la Vie Shirt</h1>
+            <h2>₱400</h2>
+            <a class="pic" href="public/preview/T-shirt 6.jpg"><img src="public/tshirt bg remove/T-shirt_6-removebg-preview.png" alt=""></a>
+            
+            <div class="like">
+                <i class="fa-solid fa-heart" id="heartIcon1" onclick="like(this)"></i>
+               <i class="fa-solid fa-paper-plane"></i>
+               <i class="fa-solid fa-cart-shopping"></i>
+               <i class="fa-solid fa-cash-register"></i>
+                </div> 
+        </div>
+        <div class="box">
+            <h1>Cards Shirt</h1>
+            <h2>₱380</h2>
+            <a class="pic" href="public/preview/T-shirts 7.jpg"><img src="public/tshirt bg remove/T-shirts_7-removebg-preview.png" alt=""></a>
+            
+            <div class="like">
+                <i class="fa-solid fa-heart" id="heartIcon1" onclick="like(this)"></i>
+               <i class="fa-solid fa-paper-plane"></i>
+               <i class="fa-solid fa-cart-shopping"></i>
+               <i class="fa-solid fa-cash-register"></i>
+                </div> 
+        </div>
+        <div class="box">
+            <h1>Hands Shirt</h1>
+            <h2>₱380</h2>
+            <a class="pic" href="public/preview/T-shirts 8.jpg"><img src="public/tshirt bg remove/T-shirts_8-removebg-preview.png" alt=""></a>
+            
+            <div class="like">
+                <i class="fa-solid fa-heart" id="heartIcon1" onclick="like(this)"></i>
+               <i class="fa-solid fa-paper-plane"></i>
+               <i class="fa-solid fa-cart-shopping"></i>
+               <i class="fa-solid fa-cash-register"></i>
+                </div> 
+        </div>
+        <div class="box">
+            <h1> Airplane T-shirt</h1>
+            <h2>₱180</h2>
+            <a class="pic" href="public/preview/T-shirts 9.jpg"><img src="public/tshirt bg remove/T-shirts_9-removebg-preview.png" alt=""></a>
+            
+            <div class="like">
+                <i class="fa-solid fa-heart" id="heartIcon1" onclick="like(this)"></i>
+               <i class="fa-solid fa-paper-plane"></i>
+               <i class="fa-solid fa-cart-shopping"></i>
+               <i class="fa-solid fa-cash-register"></i>
+                </div> 
+        </div>
+        <div class="box">
+            <h1>Astro dude T-shirt</h1>
+            <h2>₱580</h2>
+            <a class="pic" href="public/preview/T-shirts 10.jpg"><img src="public/tshirt bg remove/T-shirts_10-removebg-preview.png" alt=""></a>
+            
+            <div class="like">
+                <i class="fa-solid fa-heart" id="heartIcon1" onclick="like(this)"></i>
+               <i class="fa-solid fa-paper-plane"></i>
+               <i class="fa-solid fa-cart-shopping"></i>
+               <i class="fa-solid fa-cash-register"></i>
+                </div> 
+        </div>
+        <div class="box">
+            <h1>paper airplane shirt</h1>
+            <h2>₱280</h2>
+            <a class="pic" href="public/preview/T-shirts 5.jpg"><img src="public/tshirt bg remove/T-shirts_5-removebg-preview.png" alt=""></a>
+            
+            <div class="like">
+                <i class="fa-solid fa-heart" id="heartIcon1" onclick="like(this)"></i>
+               <i class="fa-solid fa-paper-plane"></i>
+               <i class="fa-solid fa-cart-shopping"></i>
+               <i class="fa-solid fa-cash-register"></i>
+                </div> 
+        </div>
+
+    </div>
+    <div class="space">
+        <H1 >Shoes</H1>
+    </div>
+
+
+        <div class="content2">
+           
+            <div class="box">
+                <h1>White Airfoce One</h1>
+                <h2>₱800</h2>
+                <a class="pic" href="public/preview/2ffe85593265619f88431d38938a4445.jpg"><img src="public/shoes bg remove/2ffe85593265619f88431d38938a4445-removebg-preview.png" alt=""></a>
+                <div class="like">
+                    <i class="fa-solid fa-heart" id="heartIcon1" onclick="like(this)"></i>
+                   <i class="fa-solid fa-paper-plane"></i>
+                   <i class="fa-solid fa-cart-shopping"></i>
+                   <i class="fa-solid fa-cash-register"></i>
+                    </div> 
+            </div>
+
+            <div class="box">
+                <h1>Brown Casual Shoes</h1>
+                <h2>₱2000</h2>
+                <a class="pic" href="public/preview/3e87a353da5add54eef355b1c7ece979.jpg"><img src="public/shoes bg remove/3e87a353da5add54eef355b1c7ece979-removebg-preview.png" alt=""></a>
+                <div class="like">
+                    <i class="fa-solid fa-heart" id="heartIcon1" onclick="like(this)"></i>
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <i class="fa-solid fa-cash-register"></i>
+                    </div> 
+            </div>
+
+            <div class="box">
+                <h1>Jordan one Yellow</h1>
+                 <h2>₱2300</h2>
+                <a class="pic" href="public/preview/6d02222225d47f2767e1affdd53ba5cb.jpg"><img src="public/shoes bg remove/6d02222225d47f2767e1affdd53ba5cb-removebg-preview.png" alt=""></a>
+                <div class="like">
+                    <i class="fa-solid fa-heart" id="heartIcon1" onclick="like(this)"></i>
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <i class="fa-solid fa-cash-register"></i>
+                    </div> 
+            </div>
+            <div class="box">
+                <h1>White Shoes</h1>
+                <h2>₱5200</h2>
+                <a class="pic" href="public/preview/80b87917146a492da926769c50b5e1f3.jpg"><img src="public/shoes bg remove/80b87917146a492da926769c50b5e1f3-removebg-preview.png" alt=""></a>
+                <div class="like">
+                    <i class="fa-solid fa-heart" id="heartIcon1" onclick="like(this)"></i>
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <i class="fa-solid fa-cash-register"></i>
+                    </div> 
+            </div>
+            <div class="box">
+                <h1>brown white shoes</h1>
+                <h2>₱1020</h2>
+                <a class="pic" href="public/preview/shoes/shoes 5.jpg"><img src="public/shoes bg remove/shoes_5-removebg-preview.png" alt=""></a>
+                
+                <div class="like">
+                    <i class="fa-solid fa-heart" id="heartIcon1" onclick="like(this)"></i>
+                   <i class="fa-solid fa-paper-plane"></i>
+                   <i class="fa-solid fa-cart-shopping"></i>
+                   <i class="fa-solid fa-cash-register"></i>
+                    </div> 
+            </div>
+            <div class="box">
+                <h1>Converse Shoes</h1>
+                <h2>₱800</h2>
+                <a class="pic" href="public/preview/shoes/shoes 6.jpg"><img src="public/shoes bg remove/shoes_6-removebg-preview.png" alt=""></a>
+                
+                <div class="like">
+                    <i class="fa-solid fa-heart" id="heartIcon1" onclick="like(this)"></i>
+                   <i class="fa-solid fa-paper-plane"></i>
+                   <i class="fa-solid fa-cart-shopping"></i>
+                   <i class="fa-solid fa-cash-register"></i>
+                    </div> 
+            </div>
+            <div class="box">
+                <h1>nike lv shoes</h1>
+                <h2>₱1080</h2>
+                <a class="pic" href="public/preview/shoes/shoes 7.jpg"><img src="public/shoes bg remove/shoes_7-removebg-preview.png" alt=""></a>
+                
+                <div class="like">
+                    <i class="fa-solid fa-heart" id="heartIcon1" onclick="like(this)"></i>
+                   <i class="fa-solid fa-paper-plane"></i>
+                   <i class="fa-solid fa-cart-shopping"></i>
+                   <i class="fa-solid fa-cash-register"></i>
+                    </div> 
+            </div>
+            <div class="box">
+                <h1>Sky Blue Nike</h1>
+                <h2>₱5200</h2>
+                <a class="pic" href="public/preview/shoes/shoes 8.jpg"><img src="public/shoes bg remove/shoes_8-removebg-preview.png" alt=""></a>
+                
+                <div class="like">
+                    <i class="fa-solid fa-heart" id="heartIcon1" onclick="like(this)"></i>
+                   <i class="fa-solid fa-paper-plane"></i>
+                   <i class="fa-solid fa-cart-shopping"></i>
+                   <i class="fa-solid fa-cash-register"></i>
+                    </div> 
+            </div>
+            <div class="box">
+                <h1>Black White Shoes</h1>
+                <h2>₱3080</h2>
+                <a class="pic" href="public/preview/shoes/shoes 9.jpg"><img src="public/shoes bg remove/shoes_9-removebg-preview.png" alt=""></a>
+                
+                <div class="like">
+                    <i class="fa-solid fa-heart" id="heartIcon1" onclick="like(this)"></i>
+                   <i class="fa-solid fa-paper-plane"></i>
+                   <i class="fa-solid fa-cart-shopping"></i>
+                   <i class="fa-solid fa-cash-register"></i>
+                    </div> 
+            </div>
+            <div class="box">
+                <h1>Astetic shoes brown</h1>
+                <h2>₱2080</h2>
+                <a class="pic" href="public/preview/shoes/shoes 10.jpg"><img src="public/shoes bg remove/shoes_10-removebg-preview.png" alt=""></a>
+                
+                <div class="like">
+                    <i class="fa-solid fa-heart" id="heartIcon1" onclick="like(this)"></i>
+                   <i class="fa-solid fa-paper-plane"></i>
+                   <i class="fa-solid fa-cart-shopping"></i>
+                   <i class="fa-solid fa-cash-register"></i>
+                    </div> 
+            </div>
+        </div>
+
+
+
+        <div class="space">
+                <h1>Bags</h1>
+            </div>
+        <div class="content3">
+            
+            
+
+            
+            <div class="box">
+                <h1>Gray Bag</h1>
+                <h2>₱500</h2>
+                <a class="pic" href="public/preview/bags/bag 1.jpg"><img src="public/bag bg remove/bag_1-removebg-preview.png" alt=""></a>
+                
+                <div class="like">
+                    <i class="fa-solid fa-heart" id="heartIcon1" onclick="like(this)"></i>
+                   <i class="fa-solid fa-paper-plane"></i>
+                   <i class="fa-solid fa-cart-shopping"></i>
+                   <i class="fa-solid fa-cash-register"></i>
+                    </div> 
+            </div>
+            <div class="box">
+                <h1>Lether Bag</h1>
+                <h2>₱1000</h2>
+                <a class="pic" href="public/preview/bags/bag 2.jpg"><img src="public/bag bg remove/bag_2-removebg-preview.png" alt=""></a>
+                
+                <div class="like">
+                    <i class="fa-solid fa-heart" id="heartIcon1" onclick="like(this)"></i>
+                   <i class="fa-solid fa-paper-plane"></i>
+                   <i class="fa-solid fa-cart-shopping"></i>
+                   <i class="fa-solid fa-cash-register"></i>
+                    </div> 
+            </div>
+            <div class="box">
+                <h1>Brown Bag</h1>
+                <h2>₱800</h2>
+                <a class="pic" href="public/preview/bags/bag 3.jpg"><img src="public/bag bg remove/bag_3-removebg-preview.png" alt=""></a>
+                
+                <div class="like">
+                    <i class="fa-solid fa-heart" id="heartIcon1" onclick="like(this)"></i>
+                   <i class="fa-solid fa-paper-plane"></i>
+                   <i class="fa-solid fa-cart-shopping"></i>
+                   <i class="fa-solid fa-cash-register"></i>
+                    </div> 
+            </div>
+            <div class="box">
+                <h1>North Face Black Bag</h1>
+                <h2>₱450</h2>
+                <a class="pic" href="public/preview/bags/bag 4.jpg"><img src="public/bag bg remove/bag_4-removebg-preview.png" alt=""></a>
+                
+                <div class="like">
+                    <i class="fa-solid fa-heart" id="heartIcon1" onclick="like(this)"></i>
+                   <i class="fa-solid fa-paper-plane"></i>
+                   <i class="fa-solid fa-cart-shopping"></i>
+                   <i class="fa-solid fa-cash-register"></i>
+                    </div> 
+            </div>
+            <div class="box">
+                <h1>Black Bag </h1>
+                <h2>₱500</h2>
+                <a class="pic" href="public/preview/bags/bag 5.jpg"><img src="public/bag bg remove/bag_5-removebg-preview.png" alt=""></a>
+                
+                <div class="like">
+                    <i class="fa-solid fa-heart" id="heartIcon1" onclick="like(this)"></i>
+                   <i class="fa-solid fa-paper-plane"></i>
+                   <i class="fa-solid fa-cart-shopping"></i>
+                   <i class="fa-solid fa-cash-register"></i>
+                    </div> 
+            </div>
+            <div class="box">
+                <h1>Cute Black Bag</h1>
+                <h2>₱600</h2>
+                <a class="pic" href="public/preview/bags/bag 6.jpg"><img src="public/bag bg remove/bag_6-removebg-preview.png" alt=""></a>
+                
+                <div class="like">
+                    <i class="fa-solid fa-heart" id="heartIcon1" onclick="like(this)"></i>
+                   <i class="fa-solid fa-paper-plane"></i>
+                   <i class="fa-solid fa-cart-shopping"></i>
+                   <i class="fa-solid fa-cash-register"></i>
+                    </div> 
+            </div>
+            <div class="box">
+                <h1>Star Bag</h1>
+                <h2>₱250</h2>
+                <a class="pic" href="public/preview/bags/bag 7.jpg"><img src="public/bag bg remove/bag_7-removebg-preview.png" alt=""></a>
+                
+                <div class="like">
+                    <i class="fa-solid fa-heart" id="heartIcon1" onclick="like(this)"></i>
+                   <i class="fa-solid fa-paper-plane"></i>
+                   <i class="fa-solid fa-cart-shopping"></i>
+                   <i class="fa-solid fa-cash-register"></i>
+                    </div> 
+            </div>
+            <div class="box">
+                <h1>Love Bag</h1>
+                <h2>₱450</h2>
+                <a class="pic" href="public/preview/bags/bag 8.jpg"><img src="public/bag bg remove/bag_8-removebg-preview.png" alt=""></a>
+                
+                <div class="like">
+                    <i class="fa-solid fa-heart" id="heartIcon1" onclick="like(this)"></i>
+                   <i class="fa-solid fa-paper-plane"></i>
+                   <i class="fa-solid fa-cart-shopping"></i>
+                   <i class="fa-solid fa-cash-register"></i>
+                    </div> 
+            </div>
+            <div class="box">
+                <h1>North Face Green bag</h1>
+                <h2>₱800</h2>
+                <a class="pic" href="public/preview/bags/bag 9.jpg"><img src="public/bag bg remove/bag_9-removebg-preview.png" alt=""></a>
+                
+                <div class="like">
+                    <i class="fa-solid fa-heart" id="heartIcon1" onclick="like(this)"></i>
+                   <i class="fa-solid fa-paper-plane"></i>
+                   <i class="fa-solid fa-cart-shopping"></i>
+                   <i class="fa-solid fa-cash-register"></i>
+                    </div> 
+            </div>
+            <div class="box">
+                <h1>Pink Cute Bag</h1>
+                <h2>₱850</h2>
+                <a class="pic" href="public/preview/bags/bag 10.jpg"><img src="public/bag bg remove/bag_10-removebg-preview.png" alt=""></a>
+                
+                <div class="like">
+                    <i class="fa-solid fa-heart" id="heartIcon1" onclick="like(this)"></i>
+                   <i class="fa-solid fa-paper-plane"></i>
+                   <i class="fa-solid fa-cart-shopping"></i>
+                   <i class="fa-solid fa-cash-register"></i>
+                    </div> 
+            </div>
+        </div>
+
+
+        <div class="space">
+            <h1>Jackets</h1>
+        </div>
+
+
+
+
+        <div class="content4">
+            <div class="box">
+                <h1>High-School Jacket</h1>
+                <h2>₱580</h2>
+                <a class="pic" href="public/preview/jacket/jacket 1.jpg"><img src="public/jacket bg remove/jacket_1-removebg-preview.png" alt=""></a>
+                
+                <div class="like">
+                    <i class="fa-solid fa-heart" id="heartIcon1" onclick="like(this)"></i>
+                   <i class="fa-solid fa-paper-plane"></i>
+                   <i class="fa-solid fa-cart-shopping"></i>
+                   <i class="fa-solid fa-cash-register"></i>
+                    </div> 
+            </div>
+            <div class="box">
+                <h1>Red Jacket</h1>
+                <h2>₱700</h2>
+                <a class="pic" href="public/preview/jacket/jacket 2.jpg"><img src="public/jacket bg remove/jacket_2-removebg-preview.png" alt=""></a>
+                
+                <div class="like">
+                    <i class="fa-solid fa-heart" id="heartIcon1" onclick="like(this)"></i>
+                   <i class="fa-solid fa-paper-plane"></i>
+                   <i class="fa-solid fa-cart-shopping"></i>
+                   <i class="fa-solid fa-cash-register"></i>
+                    </div> 
+            </div>
+            <div class="box">
+                <h1>Aesthetic Jacket</h1>
+                <h2>₱600</h2>
+                <a class="pic" href="public/preview/jacket/jacket 3.jpg"><img src="public/jacket bg remove/jacket_3-removebg-preview.png" alt=""></a>
+                
+                <div class="like">
+                    <i class="fa-solid fa-heart" id="heartIcon1" onclick="like(this)"></i>
+                   <i class="fa-solid fa-paper-plane"></i>
+                   <i class="fa-solid fa-cart-shopping"></i>
+                   <i class="fa-solid fa-cash-register"></i>
+                    </div> 
+            </div>
+            <div class="box">
+                <h1>Sports Jacket White</h1>
+                <h2>₱500</h2>
+                <a class="pic" href="public/preview/jacket/jacket 4.jpg"><img src="public/jacket bg remove/jacket_4-removebg-preview.png" alt=""></a>
+                
+                <div class="like">
+                    <i class="fa-solid fa-heart" id="heartIcon1" onclick="like(this)"></i>
+                   <i class="fa-solid fa-paper-plane"></i>
+                   <i class="fa-solid fa-cart-shopping"></i>
+                   <i class="fa-solid fa-cash-register"></i>
+                    </div> 
+            </div>
+            <div class="box">
+                <h1>Brown Bat Jacket</h1>
+                <h2>₱900</h2>
+                <a class="pic" href="public/preview/jacket/jacket 5.jpg"><img src="public/jacket bg remove/jacket_5-removebg-preview.png" alt=""></a>
+                
+                <div class="like">
+                    <i class="fa-solid fa-heart" id="heartIcon1" onclick="like(this)"></i>
+                   <i class="fa-solid fa-paper-plane"></i>
+                   <i class="fa-solid fa-cart-shopping"></i>
+                   <i class="fa-solid fa-cash-register"></i>
+                    </div> 
+            </div>
+            <div class="box">
+                <h1>Green Jacket</h1>
+                <h2>₱850</h2>
+                <a class="pic" href="public/preview/jacket/jacket 6.jpg"><img src="public/jacket bg remove/jacket_6-removebg-preview.png" alt=""></a>
+                
+                <div class="like">
+                    <i class="fa-solid fa-heart" id="heartIcon1" onclick="like(this)"></i>
+                   <i class="fa-solid fa-paper-plane"></i>
+                   <i class="fa-solid fa-cart-shopping"></i>
+                   <i class="fa-solid fa-cash-register"></i>
+                    </div> 
+            </div>
+            <div class="box">
+                <h1>Smile Jacket Black</h1>
+                <h2>₱600</h2>
+                <a class="pic" href="public/preview/jacket/jacket 7.jpg"><img src="public/jacket bg remove/jacket_7-removebg-preview.png" alt=""></a>
+                
+                <div class="like">
+                    <i class="fa-solid fa-heart" id="heartIcon1" onclick="like(this)"></i>
+                   <i class="fa-solid fa-paper-plane"></i>
+                   <i class="fa-solid fa-cart-shopping"></i>
+                   <i class="fa-solid fa-cash-register"></i>
+                    </div> 
+            </div>
+            <div class="box">
+                <h1>Cyan Jacket</h1>
+                <h2>₱680</h2>
+                <a class="pic" href="public/preview/jacket/jacket 8.jpg"><img src="public/jacket bg remove/jacket_8-removebg-preview.png" alt=""></a>
+                
+                <div class="like">
+                    <i class="fa-solid fa-heart" id="heartIcon1" onclick="like(this)"></i>
+                   <i class="fa-solid fa-paper-plane"></i>
+                   <i class="fa-solid fa-cart-shopping"></i>
+                   <i class="fa-solid fa-cash-register"></i>
+                    </div> 
+            </div>
+            <div class="box">
+                <h1>Black Bear Jacket</h1>
+                <h2>₱900</h2>
+                <a class="pic" href="public/preview/jacket/jacket 9.jpg"><img src="public/jacket bg remove/jacket_9-removebg-preview.png" alt=""></a>
+                
+                <div class="like">
+                    <i class="fa-solid fa-heart" id="heartIcon1" onclick="like(this)"></i>
+                   <i class="fa-solid fa-paper-plane"></i>
+                   <i class="fa-solid fa-cart-shopping"></i>
+                   <i class="fa-solid fa-cash-register"></i>
+                    </div> 
+            </div>
+            <div class="box">
+                <h1>California Jacket</h1>
+                <h2>₱520</h2>
+                <a class="pic" href="public/jacket bg remove/jacket_10-removebg-preview.png"><img src="public/jacket bg remove/jacket_10-removebg-preview.png" alt=""></a>
+                
+                <div class="like">
+                    <i class="fa-solid fa-heart" id="heartIcon1" onclick="like(this)"></i>
+                   <i class="fa-solid fa-paper-plane"></i>
+                   <i class="fa-solid fa-cart-shopping"></i>
+                   <i class="fa-solid fa-cash-register"></i>
+                    </div> 
+            </div>
+        </div>
+        <script src="https://kit.fontawesome.com/46cff300ec.js" crossorigin="anonymous"></script>
+        <script src="main.js"></script>
+</body>
+</html>

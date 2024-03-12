@@ -1,0 +1,410 @@
+*{
+    pad: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #F8F0E5;
+}
+nav{
+    width: 100%;
+  
+    height: 10vh;
+    display: flex   ;
+    background-color: #F8F0E5;
+    align-items: center;
+    justify-content: space-between;
+}
+nav a{
+    text-decoration: none;
+    color: #698474;
+}
+nav input{
+    width: 20rem;
+    height: 2rem;
+    border: 1px solid #698474;
+    border-radius: 5px;
+    margin-bottom: 2px;
+    
+    
+}
+
+
+nav li{
+    flex-direction: row;
+   margin: 5rem ;
+    list-style: none;
+    text-align: center;
+}
+nav li :hover{
+    color: #FFAAA5;
+    transition: ease-in 300ms;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.mainPage{
+
+    width: auto;
+    height: 65vh;
+    background-image: url(Selcouth\ ph.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav button{
+margin-right: 30px;
+border: 0;
+background-color: transparent;
+cursor: pointer;
+}
+
+nav h1{
+    
+    margin-left: 30px;
+    font-size: 3rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #698474;
+}
+.hidden{
+    width: 300px;
+    height: 500px;
+    text-align: center;
+    height: auto;
+    left: 80%;
+    display: none;
+    background-color: #698474;
+    margin: 10px;
+    position: absolute;
+    border-radius: 30px;
+    background-color: #F8F0E5;
+    z-index: 1;
+    border: 2px solid #698474;
+}
+.hidden p{
+    color: #698474  ;
+    font-size: 20px;
+}
+.hidden h1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #698474;
+}
+li{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #698474;
+}
+.hidden button{
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    font-size: 20px;
+    color: #698474;
+    border-radius: 20px;
+    border: 1px solid #698474;
+    background-color: transparent;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.checkout{
+    display: none;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background-color: #698474;
+    border-radius: 30px;
+    background-color: #F8F0E5;
+    border: 1px solid #698474;
+}
+.space{
+    text-align: center;
+    font-size: 30px;
+    color: #698474;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container{
+    background-color: #698474;
+    
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 25vw);
+    grid-template-rows: repeat(2, 50vh);
+}
+.item{
+    display: flex;
+   align-items: center;
+    flex-direction: column;
+    
+   
+background: rgba(248, 240, 229, 0.33);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(10.9px);
+-webkit-backdrop-filter: blur(10.9px);
+    width: 25vw;
+    height: 25rem;
+   
+   
+   
+}
+.item img{
+    width: 20rem;
+    height: 25rem;
+    
+}
+.item h1{
+    color: #F8F0E5;
+}
+.item img:hover{
+    transition: ease-in .2s;
+
+    width: 22rem;
+    height: 26rem;
+}
+.content1{
+    width: auto;
+    height: 60vh;
+    display: grid;
+    margin:2rem;
+    text-align: center;  
+    overflow-x: scroll;
+    overflow-y: hidden;
+    grid-template-columns: repeat(10, 20vw);
+    gap: 5rem;
+}
+.content2{
+    width: auto;
+    height: 60vh;
+    display: grid;
+    margin:2rem;
+    text-align: center;  
+    overflow: auto;
+    grid-template-columns: repeat(10, 20vw);
+    overflow-y: hidden;
+    gap: 5rem;
+}
+.content3{
+    width: auto;
+    height: 60vh;
+    display: grid;
+    margin:2rem;
+    text-align: center;  
+    overflow: auto;
+    grid-template-columns: repeat(10, 20vw);
+    overflow-y: hidden;
+    gap: 5rem;
+}
+.content4{
+    width: auto;
+    height: 60vh;
+    display: grid;
+    margin:2rem;
+    text-align: center;  
+    overflow: auto;
+    grid-template-columns: repeat(10, 20vw);
+    overflow-y: hidden;
+    gap: 5rem;
+}
+@media only screen and (max-width : 720px) {
+    .mainPage{
+        width: auto;
+        height:35vh;
+        background-size:cover ;
+        background-position: center;
+    }
+    nav h1{
+        font-size: 3rem;
+        
+    }
+    
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 15vh;
+    }
+    nav li{
+        margin: 0;
+        margin-left: 2rem;
+    }
+    nav input{
+        display: none;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .content1{
+        grid-template-columns: repeat(10, 20rem);
+        overflow-x:scroll;
+        white-space: nowrap;
+        margin-left: 4rem;
+        height: 60vh;
+    }
+    .content3{
+        grid-template-columns: repeat(10, 20rem);
+        overflow-x:scroll;
+        white-space: nowrap;
+        margin-left: 4rem;
+        height: 60vh;
+    }
+    .content4{
+        grid-template-columns: repeat(10, 20rem);
+        overflow-x:scroll;
+        white-space: nowrap;
+        margin-left: 4rem;
+        height: 60vh;
+    }
+    .container{
+        grid-template-columns: repeat(2, 35vw);
+        grid-template-rows: repeat(2, 14rem);
+        gap: 1rem;
+    }
+    .item img{
+        width: 8rem;
+        height: 89rem;
+    }
+    .item img:hover{
+        width: 8rem;
+        
+    }
+    .item h1{
+        font-size: 1rem;
+    }
+    .item{
+        width: 10rem;
+        height: 12rem;
+    }
+   .checkout{
+    height: 30vh;
+    background-color: #698474;
+    color: #FFD3B6;
+   }
+   .checkout h1{
+    font-size: 4rem;
+   }
+    
+    .content2{
+        grid-template-columns: repeat(10, 20rem);
+        overflow-x: hidden;
+        white-space: nowrap;
+        margin-left: 4rem;
+        height: 60vh;
+    }
+
+    .hidden{
+        left: 20%;  
+    }
+    .space h1{
+        font-size: 25px;
+
+    }
+    .like h1{
+        font-size: 25px;
+        
+    }
+    
+    img{
+        height: 30vh;
+        
+    }
+}
+.box{
+    width: auto;
+    height: 50vh;
+    border: #698474 2px solid;
+  /* From https://css.glass */
+background: rgba(105, 132, 116, 0.32);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6px);
+-webkit-backdrop-filter: blur(6px);
+    border-radius: 30px;
+    color: #698474;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
+    
+}
+.box h1{
+    margin-top: 2px;
+    color: #4c6d59;
+}
+.box h2{
+    margin-top: 2px;
+    color: #4c6d59;
+}
+.box input {
+   position: relative;
+  
+}
+.fa-paper-plane{
+    color: #4c6d59;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.fa-cart-shopping{
+    color: #4c6d59;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.fa-cart-shopping:hover{
+    color: dodgerblue;
+}
+.fa-cash-register{
+    color: #4c6d59;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.fa-cash-register:hover{
+    color: dodgerblue;
+}
+ .like{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 2rem;
+    justify-content: space-between;
+    position: relative;
+    opacity: 1;
+    transition: opacity 1.0s ease;
+    margin-top: 3rem;
+
+    
+}
+.like h1{
+    color: #4c6d59;
+}
+.fa-heart{
+    color: #4c6d59; 
+    font-size: 2rem;
+    cursor: pointer;
+}
+.fa-paper-plane:hover{
+    color: dodgerblue;
+}
+.fa-heart:hover{
+    color:red;
+}
+.heart-red{
+    color: red;
+}
+ img{
+    height: 30vh;
+    transition: ease-in 0.3s;
+}
+ .pic img:hover{
+    transition: ease-in-out 400;
+    height: 40vh;
+    
+}
+.pic:hover + .like{
+    opacity: 0;
+    transition: ease-in 200ms;
+}
+

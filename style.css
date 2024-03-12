@@ -240,21 +240,21 @@ backdrop-filter: blur(10.9px);
         overflow-x: hidden;
     }
     .content1{
-        grid-template-columns: repeat(10, 20rem);
+        grid-template-columns: repeat(10, 19rem);
         overflow-x:scroll;
         white-space: nowrap;
         margin-left: 4rem;
         height: 60vh;
     }
     .content3{
-        grid-template-columns: repeat(10, 20rem);
+        grid-template-columns: repeat(10, 19rem);
         overflow-x:scroll;
         white-space: nowrap;
         margin-left: 4rem;
         height: 60vh;
     }
     .content4{
-        grid-template-columns: repeat(10, 20rem);
+        grid-template-columns: repeat(10, 19rem);
         overflow-x:scroll;
         white-space: nowrap;
         margin-left: 4rem;
@@ -263,7 +263,7 @@ backdrop-filter: blur(10.9px);
     .container{
         grid-template-columns: repeat(2, 35vw);
         grid-template-rows: repeat(2, 14rem);
-        gap: 1rem;
+        gap: 2rem;
     }
     .item img{
         width: 8rem;
@@ -290,7 +290,7 @@ backdrop-filter: blur(10.9px);
    }
     
     .content2{
-        grid-template-columns: repeat(10, 20rem);
+        grid-template-columns: repeat(10, 19rem);
         overflow-x: hidden;
         white-space: nowrap;
         margin-left: 4rem;

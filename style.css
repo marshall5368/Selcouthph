@@ -291,7 +291,7 @@ backdrop-filter: blur(10.9px);
     
     .content2{
         grid-template-columns: repeat(10, 19rem);
-        overflow-x: hidden;
+        overflow-x: scroll;
         white-space: nowrap;
         margin-left: 4rem;
         height: 60vh;

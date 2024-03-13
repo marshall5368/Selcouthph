@@ -435,6 +435,7 @@ backdrop-filter: blur(10.9px);
         margin-bottom: 5rem;
         width: 18rem;
         height: auto;
+        max-width: 18rem;
         max-height: 22rem;
     }
     .main1{

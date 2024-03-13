@@ -103,6 +103,6 @@ jacketScroll.addEventListener('click',function(){
     var productparts = document.getElementById('productPart')
     productScroll.addEventListener('click',function(){
         productparts.scrollIntoView({
-            behavior: "smooth"
+            behavior: "smooth",block:"center"
         })
     })

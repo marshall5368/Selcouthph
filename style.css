@@ -428,7 +428,8 @@ backdrop-filter: blur(10.9px);
     .main{
         display: flex;
         flex-direction: column;
-       
+        width: auto;
+        overflow-x: hidden;
     }
     .main img{
         margin-bottom: 5rem;

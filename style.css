@@ -430,6 +430,7 @@ backdrop-filter: blur(10.9px);
         flex-direction: column;
         width: auto;
         overflow-x: hidden;
+        max-width: 27rem;
     }
     .main img{
         margin-bottom: 5rem;

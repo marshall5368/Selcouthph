@@ -327,8 +327,8 @@ backdrop-filter: blur(10.9px);
         background-size:cover ;
         background-position: center;
     }
-    nav h1{
-        font-size: 3rem;
+     nav h1{
+        font-size: 1.5rem;
         
     }
     
@@ -336,7 +336,7 @@ backdrop-filter: blur(10.9px);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 15vh;
+        height: 10vh;
     }
     nav li{
         margin: 0;

@@ -54,8 +54,9 @@ function like(heartIcon){
 
 var section1 = document.getElementById('content1')
 function letsGo(){ 
-    section1.scrollIntoView({
-        behavior: "smooth"
+    productparts.scrollIntoView({
+        behavior: "smooth",block:"center"
+        
     })
    
 
@@ -63,14 +64,14 @@ function letsGo(){
 var tshirtScroll = document.getElementById('tshirtContent')
     tshirtScroll.addEventListener('click',function(){
         section1.scrollIntoView({
-            behavior: "smooth"
+            behavior: "smooth",block:"center"
         })
 })
 var shoesScroll = document.getElementById('shoesContent')
 var section2 = document.getElementById('shoesSection')
  shoesScroll.addEventListener('click',function(){
     section2.scrollIntoView({
-        behavior: "smooth"
+        behavior: "smooth",block:"center"
     })
  })
 
@@ -79,14 +80,14 @@ var section2 = document.getElementById('shoesSection')
 
  bagScroll.addEventListener('click',function(){
     section3.scrollIntoView({
-        behavior: "smooth"
+        behavior: "smooth",block:"center"
     })
  })
  var jacketScroll = document.getElementById('jacketContent')
  var section4 = document.getElementById('jacketSection')
 jacketScroll.addEventListener('click',function(){
     section4.scrollIntoView({
-        behavior: "smooth"
+        behavior: "smooth",block:"center"
     })
  })
 

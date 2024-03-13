@@ -8,20 +8,20 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <body>
-    <nav>
+    <nav id="navigations">
         <h1>Selcouth</h1>
         <ul class="navbtn">    
                
                 <li><input type="text" name="" id="" ><a href=""><i class="fa-solid fa-magnifying-glass" style= "color:#698474; font-size: 1.5rem; margin-left: 0.5rem;"></i></a></li>
-                <li><a href="C:\Users\kent\Desktop\aleng bebang\new update 2.0\index.html"><strong>Home</strong></a></li>
-                <li><a href=""><strong>Products</strong></a></li>
+                <li id="homeSection" style="cursor: pointer;"><strong>Home</strong></li>
+                <li id="ProductSection" style="cursor: pointer;"><strong>Products</strong></li>
                 <li><button onclick="cariton()"><span class="material-symbols-outlined" style="font-size: 50px; color: #698474;">
             shopping_cart
             </span></button></li>
         </ul>
         
     </nav>
-
+    
 
 
     <div class="hidden" id="cart">
@@ -47,40 +47,61 @@
         <p id="Message" style="color: red;"></p>
     </div>
 
+    <div class="main" id="homeMain">
+        <div class="main1">
+            <div class="text">
+            <h1>Selcouth</h1>
+            <p>Step into a world where fashion meets individuality. Our curated collection transcends trends, offering quality craftsmanship and unparalleled variety. From statement t-shirts to stylish jackets and accessories, each item invites bold self-expression. Join our community and let your style speak volumes. Start your journey with Selcouth today.</p>
+            </div>
+            <button onclick="letsGo()">Lets Go Shopping</button>
+        </div>
+        <div class="main2">
+                <div class="btnPrev">
+                    <button onclick="Prev()"><i class="fa-solid fa-chevron-left"></i></button>
+                </div>
+            
+            <img src="source/tshirts/3-removebg-preview.png" id="Image">
+           
+           <div class="btnNext">
+             <button onclick="Changeimg()"><i class="fa-solid fa-chevron-right"></i></button>
 
+            </div>
+        </div>
+
+    </div>
 
     <div class="mainPage">
         <br>
         
     </div>
     
-    <div class="container">
+    <div class="container" id="productPart">
         
-        <div class="item">
+        <div class="item" id="tshirtContent">
             <h1>T-Shirts</h1>
            <img src="public/tshirt bg remove/T-shirts_10-removebg-preview.png" alt="">
         </div>
-        <div class="item">
+        <div class="item" id="shoesContent">
             <h1>Shoes</h1>
             <img src="public/shoes bg remove/shoes_7-removebg-preview.png">
         </div>
-        <div class="item">
+        <div class="item" id="bagContent">
             <h1>Bags</h1>
             <img src="public/bag bg remove/bag_4-removebg-preview.png" alt="">
         </div>
-        <div class="item">
+        <div class="item" id="jacketContent">
             <h1>Jacket</h1>
             <img src="public/jacket bg remove/jacket_2-removebg-preview.png" alt="" srcset="">
         </div>
     </div>
 
-    <div class="space">
+    <div class="space" id="content1">
     <H1>T-shirts</H1>
 </div>
 
 
 
-    <div class="content1">
+    <div class="content1" >
 
         <div class="box">
             <h1>Quote T-shirt</h1>
@@ -208,12 +229,12 @@
         </div>
 
     </div>
-    <div class="space">
+    <div class="space" id="shoesSection">
         <H1 >Shoes</H1>
     </div>
 
 
-        <div class="content2">
+        <div class="content2" >
            
             <div class="box">
                 <h1>White Airfoce One</h1>
@@ -337,7 +358,7 @@
 
 
 
-        <div class="space">
+        <div class="space" id="bagSection">
                 <h1>Bags</h1>
             </div>
         <div class="content3">
@@ -468,7 +489,7 @@
         </div>
 
 
-        <div class="space">
+        <div class="space" id="jacketSection">
             <h1>Jackets</h1>
         </div>
 

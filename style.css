@@ -432,17 +432,35 @@ backdrop-filter: blur(10.9px);
     }
     .main img{
         margin-bottom: 5rem;
-        width: 20rem;
+        width: 18rem;
+        height: auto;
+        max-height: 22rem;
     }
     .main1{
         padding-inline-start: 2rem;
         margin-bottom: 0;
+    }
+    .main2{
+        max-height: 20rem;
     }
     .fa-chevron-left{
         font-size: 2rem;
     }
     .fa-chevron-right{
         font-size: 2rem;
+    }
+    .btnPrev button :hover{
+        translate: 0;
+    }
+    .btnNext button :hover{
+        translate: 0;
+    }
+
+    .main1 button:hover{
+        translate: 0;
+        width: 15rem;
+        height: 3rem;
+        font-size: 1.5rem;
     }
 }
 .box{

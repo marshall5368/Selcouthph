@@ -466,6 +466,18 @@ backdrop-filter: blur(10.9px);
     .hiddenMenu .container .fa-arrow-left{
         font-size: 1.5rem;
     }
+     .content1 .box{
+    height: 27rem;
+  }
+  .content2 .box{
+    height: 27rem;
+  }
+  .content3 .box{
+    height: 27rem;
+  }
+  .content4 .box{
+    height: 27rem;
+  }
 }
 .box{
 

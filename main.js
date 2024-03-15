@@ -21,7 +21,7 @@ var pricetag = document.getElementById('price')
       linkimage.href = box1image.src
         bodySite.style.overflow = "hidden"
      hiddenImg.scrollIntoView({
-        behavior: "smooth",block:"center" 
+        behavior: "smooth", inline: "center"
         
     })
         backhidden.addEventListener('click', function(){
@@ -29,7 +29,7 @@ var pricetag = document.getElementById('price')
         bodySite.style.overflow = "scroll"
 
         box1image.scrollIntoView({
-            behavior: "smooth",block:"center"
+            behavior: "smooth",block:"center", inline: "center"
         })
     })
 
@@ -57,7 +57,7 @@ var pricetag = document.getElementById('price')
             bodySite.style.overflow = "scroll"
     
             box2image.scrollIntoView({
-                behavior: "smooth",block:"center"
+                behavior: "smooth",block:"center", inline: "center"
             })
         })
     
@@ -85,7 +85,7 @@ var pricetag = document.getElementById('price')
             bodySite.style.overflow = "scroll"
     
             box3.scrollIntoView({
-                behavior: "smooth",block:"center"
+                behavior: "smooth",block:"center", inline: "center"
             })
         })
     
@@ -112,7 +112,7 @@ var pricetag = document.getElementById('price')
             bodySite.style.overflow = "scroll"
     
             box4.scrollIntoView({
-                behavior: "smooth",block:"center"
+                behavior: "smooth",block:"center", inline: "center"
             })
         })
 
@@ -139,7 +139,7 @@ var pricetag = document.getElementById('price')
             bodySite.style.overflow = "scroll"
     
             box5.scrollIntoView({
-                behavior: "smooth",block:"center"
+                behavior: "smooth",block:"center", inline: "center"
             })
         })
 
@@ -167,7 +167,7 @@ var pricetag = document.getElementById('price')
             bodySite.style.overflow = "scroll"
     
             box6.scrollIntoView({
-                behavior: "smooth",block:"center"
+                behavior: "smooth",block:"center", inline: "center"
             })
         })
     })
@@ -193,7 +193,7 @@ var pricetag = document.getElementById('price')
             bodySite.style.overflow = "scroll"
     
             box7.scrollIntoView({
-                behavior: "smooth",block:"center"
+                behavior: "smooth",block:"center", inline: "center"
             })
         })
     })
@@ -220,7 +220,7 @@ var pricetag = document.getElementById('price')
             bodySite.style.overflow = "scroll"
     
             box8.scrollIntoView({
-                behavior: "smooth",block:"center"
+                behavior: "smooth",block:"center", inline: "center"
             })
         })
     })
@@ -246,7 +246,7 @@ var pricetag = document.getElementById('price')
             bodySite.style.overflow = "scroll"
     
             box9.scrollIntoView({
-                behavior: "smooth",block:"center"
+                behavior: "smooth",block:"center", inline: "center"
             })
         })
     })
@@ -272,7 +272,7 @@ var pricetag = document.getElementById('price')
             bodySite.style.overflow = "scroll"
     
             box10.scrollIntoView({
-                behavior: "smooth",block:"center"
+                behavior: "smooth",block:"center", inline: "center"
             })
         })
     })
@@ -300,7 +300,7 @@ var pricetag = document.getElementById('price')
             bodySite.style.overflow = "scroll"
     
             shoes1.scrollIntoView({
-                behavior: "smooth",block:"center"
+                behavior: "smooth",block:"center", inline: "center"
             })
         })
     })
@@ -326,7 +326,7 @@ var pricetag = document.getElementById('price')
                 bodySite.style.overflow = "scroll"
         
                 shoes2.scrollIntoView({
-                    behavior: "smooth",block:"center"
+                    behavior: "smooth",block:"center", inline: "center"
                 })
             })
         })
@@ -352,7 +352,7 @@ var pricetag = document.getElementById('price')
                 bodySite.style.overflow = "scroll"
         
                 shoes3.scrollIntoView({
-                    behavior: "smooth",block:"center"
+                    behavior: "smooth",block:"center", inline: "center"
                 })
             })
         })
@@ -378,7 +378,7 @@ var pricetag = document.getElementById('price')
                 bodySite.style.overflow = "scroll"
         
                 shoes4.scrollIntoView({
-                    behavior: "smooth",block:"center"
+                    behavior: "smooth",block:"center", inline: "center"
                 })
             })
         })
@@ -404,7 +404,7 @@ var pricetag = document.getElementById('price')
                 bodySite.style.overflow = "scroll"
         
                 shoes5.scrollIntoView({
-                    behavior: "smooth",block:"center"
+                    behavior: "smooth",block:"center", inline: "center"
                 })
             })
         })
@@ -430,7 +430,7 @@ var pricetag = document.getElementById('price')
                 bodySite.style.overflow = "scroll"
         
                 shoes6.scrollIntoView({
-                    behavior: "smooth",block:"center"
+                    behavior: "smooth",block:"center", inline: "center"
                 })
             })
         })
@@ -457,7 +457,7 @@ var pricetag = document.getElementById('price')
                 bodySite.style.overflow = "scroll"
         
                 shoes7.scrollIntoView({
-                    behavior: "smooth",block:"center"
+                    behavior: "smooth",block:"center", inline: "center"
                 })
             })
         })
@@ -483,7 +483,7 @@ var pricetag = document.getElementById('price')
                 bodySite.style.overflow = "scroll"
         
                 shoes8.scrollIntoView({
-                    behavior: "smooth",block:"center"
+                    behavior: "smooth",block:"center", inline: "center"
                 })
             })
         })
@@ -510,7 +510,7 @@ var pricetag = document.getElementById('price')
                 bodySite.style.overflow = "scroll"
         
                 shoes9.scrollIntoView({
-                    behavior: "smooth",block:"center"
+                    behavior: "smooth",block:"center", inline: "center"
                 })
             })
         })
@@ -537,7 +537,7 @@ var pricetag = document.getElementById('price')
                 bodySite.style.overflow = "scroll"
         
                 shoes6.scrollIntoView({
-                    behavior: "smooth",block:"center"
+                    behavior: "smooth",block:"center", inline: "center"
                 })
             })
         })
@@ -566,7 +566,7 @@ var pricetag = document.getElementById('price')
                 bodySite.style.overflow = "scroll"
         
                 bag1.scrollIntoView({
-                    behavior: "smooth",block:"center"
+                    behavior: "smooth",block:"center", inline: "center"
                 })
             })
         })
@@ -593,7 +593,7 @@ var pricetag = document.getElementById('price')
                 bodySite.style.overflow = "scroll"
         
                 bag2.scrollIntoView({
-                    behavior: "smooth",block:"center"
+                    behavior: "smooth",block:"center", inline: "center"
                 })
             })
         })
@@ -619,7 +619,7 @@ var pricetag = document.getElementById('price')
                 bodySite.style.overflow = "scroll"
         
                 bag3.scrollIntoView({
-                    behavior: "smooth",block:"center"
+                    behavior: "smooth",block:"center", inline: "center"
                 })
             })
         })
@@ -645,7 +645,7 @@ var pricetag = document.getElementById('price')
                 bodySite.style.overflow = "scroll"
         
                 bag4.scrollIntoView({
-                    behavior: "smooth",block:"center"
+                    behavior: "smooth",block:"center", inline: "center"
                 })
             })
         })
@@ -671,7 +671,7 @@ var pricetag = document.getElementById('price')
                 bodySite.style.overflow = "scroll"
         
                 bag5.scrollIntoView({
-                    behavior: "smooth",block:"center"
+                    behavior: "smooth",block:"center", inline: "center"
                 })
             })
         })
@@ -698,7 +698,7 @@ var pricetag = document.getElementById('price')
                 bodySite.style.overflow = "scroll"
         
                 bag6.scrollIntoView({
-                    behavior: "smooth",block:"center"
+                    behavior: "smooth",block:"center", inline: "center"
                 })
             })
         })
@@ -725,7 +725,7 @@ var pricetag = document.getElementById('price')
                 bodySite.style.overflow = "scroll"
         
                 bag7.scrollIntoView({
-                    behavior: "smooth",block:"center"
+                    behavior: "smooth",block:"center", inline: "center"
                 })
             })
         })
@@ -752,7 +752,7 @@ var pricetag = document.getElementById('price')
                 bodySite.style.overflow = "scroll"
         
                 bag8.scrollIntoView({
-                    behavior: "smooth",block:"center"
+                    behavior: "smooth",block:"center", inline: "center"
                 })
             })
         })
@@ -779,7 +779,7 @@ var pricetag = document.getElementById('price')
                 bodySite.style.overflow = "scroll"
         
                 bag9.scrollIntoView({
-                    behavior: "smooth",block:"center"
+                    behavior: "smooth",block:"center", inline: "center"
                 })
             })
         })
@@ -806,7 +806,7 @@ var pricetag = document.getElementById('price')
                 bodySite.style.overflow = "scroll"
         
                 bag10.scrollIntoView({
-                    behavior: "smooth",block:"center"
+                    behavior: "smooth",block:"center", inline: "center"
                 })
             })
         })
@@ -834,7 +834,7 @@ var pricetag = document.getElementById('price')
                     bodySite.style.overflow = "scroll"
             
                     jacket1.scrollIntoView({
-                        behavior: "smooth",block:"center"
+                        behavior: "smooth",block:"center", inline: "center"
                     })
                 })
             })
@@ -861,7 +861,7 @@ var pricetag = document.getElementById('price')
                     bodySite.style.overflow = "scroll"
             
                     jacket2.scrollIntoView({
-                        behavior: "smooth",block:"center"
+                        behavior: "smooth",block:"center", inline: "center"
                     })
                 })
             })
@@ -888,7 +888,7 @@ var pricetag = document.getElementById('price')
                     bodySite.style.overflow = "scroll"
             
                     jacket3.scrollIntoView({
-                        behavior: "smooth",block:"center"
+                        behavior: "smooth",block:"center", inline: "center"
                     })
                 })
             })
@@ -916,7 +916,7 @@ var pricetag = document.getElementById('price')
                     bodySite.style.overflow = "scroll"
             
                     jacket4 .scrollIntoView({
-                        behavior: "smooth",block:"center"
+                        behavior: "smooth",block:"center", inline: "center"
                     })
                 })
             })
@@ -943,7 +943,7 @@ var pricetag = document.getElementById('price')
                     bodySite.style.overflow = "scroll"
             
                     jacket5.scrollIntoView({
-                        behavior: "smooth",block:"center"
+                        behavior: "smooth",block:"center", inline: "center"
                     })
                 })
             })
@@ -970,7 +970,7 @@ var pricetag = document.getElementById('price')
                     bodySite.style.overflow = "scroll"
             
                     jacket6.scrollIntoView({
-                        behavior: "smooth",block:"center"
+                        behavior: "smooth",block:"center", inline: "center"
                     })
                 })
             })
@@ -997,7 +997,7 @@ var pricetag = document.getElementById('price')
                     bodySite.style.overflow = "scroll"
             
                     jacket7.scrollIntoView({
-                        behavior: "smooth",block:"center"
+                        behavior: "smooth",block:"center", inline: "center"
                     })
                 })
             })
@@ -1024,7 +1024,7 @@ var pricetag = document.getElementById('price')
                     bodySite.style.overflow = "scroll"
             
                     jacket8.scrollIntoView({
-                        behavior: "smooth",block:"center"
+                        behavior: "smooth",block:"center", inline: "center"
                     })
                 })
             })
@@ -1051,7 +1051,7 @@ var pricetag = document.getElementById('price')
                     bodySite.style.overflow = "scroll"
             
                     jacket9.scrollIntoView({
-                        behavior: "smooth",block:"center"
+                        behavior: "smooth",block:"center", inline: "center"
                     })
                 })
             })
@@ -1079,7 +1079,7 @@ var pricetag = document.getElementById('price')
                     bodySite.style.overflow = "scroll"
             
                     jacket10.scrollIntoView({
-                        behavior: "smooth",block:"center"
+                        behavior: "smooth",block:"center", inline: "center"
                     })
                 })
             })

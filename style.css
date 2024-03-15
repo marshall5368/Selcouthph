@@ -1,16 +1,23 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
 *{
     pad: 0;
     margin: 0;
 }
 
+
+
 body{
-    background-color: #F8F0E5;
+    background-color: #92BB9D;
 }
 nav{
     width: 100%;
     height: 7vh;
     display: flex   ;
-    background-color: #F8F0E5;
+    background-color: #35374B;
     align-items: center;
     justify-content: space-between;
     position: fixed;
@@ -18,29 +25,28 @@ nav{
 }
 nav a{
     text-decoration: none;
-    color: #698474;
+    
 }
 nav input{
+    background-color: #92BB9D;
     width: 20rem;
     height: 2rem;
     border: 1px solid #698474;
     border-radius: 5px;
     margin-bottom: 2px;
-    
-    
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 
 nav li{
+    color: #92BB9D;
     flex-direction: row;
    margin: 5rem ;
     list-style: none;
     text-align: center;
 }
-nav li :hover{
-    color: #FFAAA5;
-    transition: ease-in 300ms;
-}
+
 nav ul {
     display: flex;
     justify-content: space-between;
@@ -49,7 +55,7 @@ nav ul {
 }
 
 .main{
-    background-color: #698474;
+    background-color: #78A083;
     display: grid;
     justify-content: space-between;
     grid-template-columns:repeat( 2, 48vw);
@@ -111,6 +117,10 @@ align-items: start;
 .main img{
     height: auto;
     width: auto;
+    min-height: 40rem;
+    max-height: 40rem;
+    min-width: 30rem;
+    max-width: 30rem;
     image-rendering: optimizeQuality;
     transition: ease-in-out .5s;
 background: rgba(255, 255, 255, 0.2);
@@ -178,47 +188,15 @@ nav h1{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #698474;
 }
-.hidden{
-    width: 300px;
-    height: 500px;
-    text-align: center;
-    height: auto;
-    left: 80%;
-    display: none;
-    background-color: #698474;
-    margin: 10px;
-    position: absolute;
-    border-radius: 30px;
-    background-color: #F8F0E5;
-    z-index: 1;
-    border: 2px solid #698474;
-}
-.hidden p{
-    color: #698474  ;
-    font-size: 20px;
-}
-.hidden h1{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #698474;
-}
+
+
 li{
     text-decoration: none;
     font-size: 20px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #698474;
 }
-.hidden button{
-    width: 150px;
-    height: 50px;
-    text-align: center;
-    font-size: 20px;
-    color: #698474;
-    border-radius: 20px;
-    border: 1px solid #698474;
-    background-color: transparent;
-    cursor: pointer;
-    margin-bottom: 20px;
-}
+
 .checkout{
     display: none;
     width: 100%;
@@ -232,11 +210,11 @@ li{
 .space{
     text-align: center;
     font-size: 30px;
-    color: #698474;
+    color: #344955;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .container{
-    background-color: #698474;
+    background-color: #78A083;
     
     justify-content: center;
     align-items: center;
@@ -282,10 +260,11 @@ backdrop-filter: blur(10.9px);
     display: grid;
     margin:2rem;
     text-align: center;  
-    overflow-x: scroll;
+    overflow-x: hidden;
     overflow-y: hidden;
     grid-template-columns: repeat(10, 20vw);
     gap: 5rem;
+    scroll-behavior: smooth;
 }
 .content2{
     width: auto;
@@ -293,7 +272,8 @@ backdrop-filter: blur(10.9px);
     display: grid;
     margin:2rem;
     text-align: center;  
-    overflow: auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
     grid-template-columns: repeat(10, 20vw);
     overflow-y: hidden;
     gap: 5rem;
@@ -304,7 +284,8 @@ backdrop-filter: blur(10.9px);
     display: grid;
     margin:2rem;
     text-align: center;  
-    overflow: auto;
+    overflow: hidden;
+    scroll-behavior: smooth;
     grid-template-columns: repeat(10, 20vw);
     overflow-y: hidden;
     gap: 5rem;
@@ -315,7 +296,8 @@ backdrop-filter: blur(10.9px);
     display: grid;
     margin:2rem;
     text-align: center;  
-    overflow: auto;
+    overflow: hidden;
+    scroll-behavior: smooth;
     grid-template-columns: repeat(10, 20vw);
     overflow-y: hidden;
     gap: 5rem;
@@ -327,7 +309,7 @@ backdrop-filter: blur(10.9px);
         background-size:cover ;
         background-position: center;
     }
-     nav h1{
+    nav h1{
         font-size: 1.5rem;
         
     }
@@ -406,9 +388,7 @@ backdrop-filter: blur(10.9px);
         height: 60vh;
     }
 
-    .hidden{
-        left: 20%;  
-    }
+   
     .space h1{
         font-size: 25px;
 
@@ -417,7 +397,7 @@ backdrop-filter: blur(10.9px);
         font-size: 25px;
         
     }
-    
+
     img{
         height: 30vh;
        
@@ -437,7 +417,9 @@ backdrop-filter: blur(10.9px);
         width: 18rem;
         height: auto;
         max-width: 18rem;
+        min-width: 17rem;
         max-height: 22rem;
+        min-height: 22rem;
     }
     .main1{
         padding-inline-start: 2rem;
@@ -465,28 +447,40 @@ backdrop-filter: blur(10.9px);
         height: 3rem;
         font-size: 1.5rem;
     }
+    .arrow .fa-angle-left{
+        display: none;
+    }
+    .arrow .fa-angle-right{
+        display: none;
+    }
+    .hiddenMenu .containerHidden{
+        width: 20rem;
+        font-size: .9rem;
+    }
+    .hiddenMenu .containerHidden img{
+        width: 12rem;
+        height: 15rem;
+        top: 1rem;
+        left: 4rem;
+    }
+    .hiddenMenu .container .fa-arrow-left{
+        font-size: 1.5rem;
+    }
 }
 .box{
-    width: auto;
-    height: 50vh;
-    border: #698474 2px solid;
-  /* From https://css.glass */
-background: rgba(105, 132, 116, 0.32);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(6px);
--webkit-backdrop-filter: blur(6px);
-    border-radius: 30px;
-    color: #698474;
-    align-items: center;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    height: 45vh;
+    background-color: #50727B;
+    border-radius: 10px;
+    font-family: "Open Sans", sans-serif;
     display: flex;
     flex-direction: column;
+    white-space: nowrap;
     
 }
 .box h1{
     margin-top: 2px;
-    color: #4c6d59;
+    color: #1F2234;
 }
 .box h2{
     margin-top: 2px;
@@ -496,66 +490,145 @@ backdrop-filter: blur(6px);
    position: relative;
   
 }
-.fa-paper-plane{
-    color: #4c6d59;
-    font-size: 2rem;
-    cursor: pointer;
-}
-.fa-cart-shopping{
-    color: #4c6d59;
-    font-size: 2rem;
-    cursor: pointer;
-}
-.fa-cart-shopping:hover{
-    color: dodgerblue;
-}
-.fa-cash-register{
-    color: #4c6d59;
-    font-size: 2rem;
-    cursor: pointer;
-}
-.fa-cash-register:hover{
-    color: dodgerblue;
+
+.fa-star{
+    font-size: 15px;
+
 }
  .like{
-    display: flex;
-    flex-direction: row-reverse;
-    gap: 2rem;
-    justify-content: space-between;
-    position: relative;
-    opacity: 1;
-    transition: opacity 1.0s ease;
-    margin-top: 3rem;
-
-    
+   display: flex;
+   flex-direction: column;
+    text-align: start;
+    margin-left: 1rem;
+    color: white;
+    margin-left: 2rem;
 }
 .like h1{
-    color: #4c6d59;
+    color: white;
+    font-size: 1.5rem;
 }
-.fa-heart{
-    color: #4c6d59; 
-    font-size: 2rem;
+.star{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+}
+.box img{
+    position: relative;
+    left: 2.5rem;
+    width: auto;
+    max-width: 15rem;
+    height:19rem;
+    margin-top: 1.5rem;
+    border: #50727B 2px solid;
     cursor: pointer;
+ 
 }
-.fa-paper-plane:hover{
-    color: dodgerblue;
+.hiddenMenu{
+    width: 100%;
+    height: 100%;
+    
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+    display:none;
+    position: absolute;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
 }
-.fa-heart:hover{
-    color:red;
-}
-.heart-red{
-    color: red;
-}
- img{
-    height: 30vh;
-    transition: ease-in 0.3s;
-}
- .pic img:hover{
-    transition: ease-in-out 400;
-    height: 40vh;
+.containerHidden{
+   /* From https://css.glass */
+background: rgba(80, 114, 123, 0.74);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(11.4px);
+-webkit-backdrop-filter: blur(11.4px);
+    display: flex;
+    width: 30rem;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    color: white;
+    max-width: 30rem;
+    font-family: "Open Sans", sans-serif;
     
 }
-.pic:hover + .like{
-    opacity: 0;
-    transition: ease-in 200ms;
+.hiddentext{
+   margin: 30px;
+   
+}
+.containerHidden img{
+    width: 20rem;
+    position: relative;
+    left: 5rem;
+    top: 2rem;
+
+}
+.containerHidden .fa-cart-shopping{
+    font-size: 30px;
+    margin-top:10px;
+    cursor: pointer;
+}
+.containerHidden .fa-credit-card{
+    font-size: 30px;
+    margin-top:10px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.containerHidden .fa-share{
+    font-size: 30px;
+    margin-top:10px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.containerHidden .fa-star{
+    font-size: 20px;
+    cursor: pointer;
+}
+.fa-star:hover{
+    color: yellow;
+}
+.containerHidden .fa-arrow-left{
+    font-size: 2rem;
+    left: 1rem;
+    top: 1.5rem;
+    position: absolute;
+    cursor: pointer;
+}
+.fa-angle-left{
+    font-size: 3rem;
+
+    opacity: .5;
+    transition: ease-out .2s;
+    color: black;
+}
+.fa-angle-left:hover{
+    opacity: 1;
+    font-size: 4rem;
+    transition: .2s ease;
+    translate: -1rem;
+}
+.fa-angle-right{
+    font-size: 3rem;
+
+    opacity: 0.5;
+    color: black;
+}
+.fa-angle-right:hover{
+    opacity: 1;
+    font-size: 4rem;
+    transition: .2s ease;
+    translate: 1rem;
+}
+.arrow{
+    margin-top: 12rem;
+    width:98.7rem;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
 }

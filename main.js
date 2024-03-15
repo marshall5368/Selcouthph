@@ -546,7 +546,7 @@ var pricetag = document.getElementById('price')
         ////bags...//////
 
         const bag1 = document.getElementById('bag1')
-        const bag1Name = document.getElementById('bag1')
+        const bag1Name = document.getElementById('bag1Name')
         const bag1Des = document.getElementById('bag1Des')
 
         bag1.addEventListener('click', function(){
